@@ -9,7 +9,7 @@ Permite todas las operaciones mencionadas en la documentación:
 Para usarlo se debe:
 
 ```javascript
-var Culqi = require('node-culqi');
+var Culqi = require('culqi');
 
 // Creamos el objeto reutilizable, los parámetros son (codigo_comercio, llave_comercio, ambiente (Culqi.PRODUCCION o Culqi.INTEGRACION))
 var culqi = new Culqi('demo', 'JlhLlpOB5s1aS6upiioJkmdQ0OYZ6HLS2+/o4iYO2MQ=', Culqi.INTEGRACION);
