@@ -1,0 +1,30 @@
+{
+  "name": "node-culqi",
+  "version": "0.0.1",
+  "description": "Libreria para realizar las operaciones sobre el API rest de culqi.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnzo/node-culqi.git"
+  },
+  "keywords": [
+    "culqi",
+    "pasarela",
+    "pagos",
+    "payments",
+    "node",
+    "nodejs"
+  ],
+  "author": "Renzo Cortez <renzo@tiendun.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rnzo/node-culqi/issues"
+  },
+  "homepage": "https://github.com/rnzo/node-culqi#readme",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}
