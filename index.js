@@ -54,9 +54,6 @@ Culqi.prototype.crear = function (informacion_venta, callback) {
 			if (response.statusCode != 200) callback(new Error('No se pudo conectar al servidor.'))
 			else {
 				var descifrado = JSON.parse(that.descifrar(result).toString('utf8'));
-				if (descifrado.informacion_venta) {
-					descifrado.informacion_venta = JSON.parse(that.descifrar(descifrado.informacion_venta).toString('utf8'));
-				} 
 				callback(null, descifrado);
 			}
 		}
@@ -101,9 +98,6 @@ Culqi.prototype.anular = function (informacion_venta, callback) {
 			if (response.statusCode != 200) callback(new Error('No se pudo conectar al servidor.'))
 			else {
 				var descifrado = JSON.parse(that.descifrar(result).toString('utf8'));
-				if (descifrado.informacion_venta) {
-					descifrado.informacion_venta = JSON.parse(that.descifrar(descifrado.informacion_venta).toString('utf8'));
-				} 
 				callback(null, descifrado);
 			}
 		}
@@ -144,9 +138,6 @@ Culqi.prototype.consultar = function (informacion_venta, callback) {
 		body: obj
 	}, function (err, response, result) {
 		var descifrado = JSON.parse(that.descifrar(result).toString('utf8'));
-		if (descifrado.informacion_venta) {
-			descifrado.informacion_venta = JSON.parse(that.descifrar(descifrado.informacion_venta).toString('utf8'));
-		} 
 		callback(null, descifrado);
 	});
 };
