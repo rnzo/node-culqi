@@ -1,5 +1,5 @@
 {
-  "name": "node-culqi",
+  "name": "culqi",
   "version": "0.0.1",
   "description": "Libreria para realizar las operaciones sobre el API rest de culqi.com",
   "main": "index.js",
